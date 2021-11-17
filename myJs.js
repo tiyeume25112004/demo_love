@@ -14,7 +14,7 @@ function firstQuestion(){
     
     $('.content').hide();
     Swal.fire({
-        title: 'He luu cậu!',
+        title: 'Hello cậu!',
         text: 'Tớ có điều này muốn hỏi cậu nhớ phải trả lời thật lòng nhaaa.',
         imageUrl: 'cuteCat.jpg',
         imageWidth: 300,
@@ -73,7 +73,7 @@ $('#no').click(() => {
 // generate text in input
 function textGenerate() {
     var n = "";
-    var text = " Tại vì cậu đẹp trai vl :<< hihi ";
+    var text = " Tại vì..Tại vì tớ thích cậu từ lâu rồi ";
     var a = Array.from(text);
     var textVal = $('#txtReason').val() ? $('#txtReason').val() : "";
     var count = textVal.length;
@@ -101,7 +101,7 @@ $('#yes').click(function() {
         width: 900,
         padding: '3em',
         html: "<input type='text' class='form-control' id='txtReason' onmousemove=textGenerate()  placeholder='Whyyy'>",
-        background: '#fff url("img/iput-bg.jpg")',
+        background: '#fff url("iput-bg.jpg")',
         backdrop: `
               rgba(0,0,123,0.4)
               url("giphy2.gif")
@@ -109,20 +109,20 @@ $('#yes').click(function() {
               no-repeat
             `,
         showCancelButton: true,
-        cancelButtonText: "Thôi ngại lém :<",
+        cancelButtonText: "Tại vì tớ thích cậu được chưa!",
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
         confirmButtonColor: '#fe8a71',
         cancelButtonColor: '#f6cd61',
-        confirmButtonText: 'Gửi cho tớ <3'
+        confirmButtonText: 'Làm vợ tớ nhé!!'
     }).then((result) => {
         if (result.value) {
             Swal.fire({
                 width: 900,
-                confirmButtonText: 'Okiiiii lun <3',
+                confirmButtonText: 'Yep, tớ thích cậu!!',
                 background: '#fff url("iput-bg.jpg")',
-                title: 'Tớ biết mà ^^ Yêu cậu 300.000',
-                text: "Tối nay tớ qua đón cậu đi chơi nhaaaaaaaaa :v Còn giờ thì chờ gì nữa mà ko inbox cho tớ đi nàoooooo",
+                title: 'Tớ biết mà ^^ Yêu cậu, baka!',
+                text: "Tối qua nhà tớ xem anime đê, 1..8! Còn h thì qua nhắn cho tớ câu iu thương nào :>>",
                 confirmButtonColor: '#83d0c9',
                 onClose: () => {
                     window.location = 'https://www.facebook.com/kon.chan.spycio/';
