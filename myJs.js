@@ -114,7 +114,7 @@ $('#yes').click(function() {
         cancelButtonColor: '#d33',
         confirmButtonColor: '#fe8a71',
         cancelButtonColor: '#f6cd61',
-        confirmButtonText: 'Làm vợ tớ nhé!!'
+        confirmButtonText: 'Làm husbanb tớ nhé!!'
     }).then((result) => {
         if (result.value) {
             Swal.fire({
